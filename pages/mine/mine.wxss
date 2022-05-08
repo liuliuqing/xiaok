@@ -1,0 +1,12 @@
+.bg{
+  width:750rpx;
+  height: 100vh;
+}
+.tip-btn{
+  position: absolute;
+  top: 58%;
+  background-color: aliceblue;
+  padding: 5px;
+  left: 50%;
+  margin-left: -72px;
+}

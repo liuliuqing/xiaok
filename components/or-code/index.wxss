@@ -1,0 +1,14 @@
+.container{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.qr-box{
+  width: 304rpx;
+  height: 304rpx;
+  background-color: #f18787;
+  border-radius: 10px;
+  padding: 10px;
+}

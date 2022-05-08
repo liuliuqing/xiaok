@@ -1,0 +1,38 @@
+<view class="container">
+    <!-- <mp-uploader 
+      bindfail="uploadError" 
+      bindsuccess="uploadSuccess"
+      binddelete="deleteImg"
+      select="{{selectFile}}" 
+      upload="{{uplaodFile}}" 
+      files="{{files}}" 
+      max-count="9" 
+      size-type="{{sizeType}}"
+      title="" 
+      tips="请上传整改好的图片">
+    </mp-uploader> -->
+    <c-uploader 
+      bindfail="uploadError" 
+      bindsuccess="uploadSuccess"
+      binddelete="deleteImg"
+      binddeleteAll="deleteAllFile" 
+      select="{{selectFile}}" 
+      upload="{{uplaodFile}}" 
+      files="{{files}}" 
+      max-count="4" 
+      size-type="{{sizeType}}"
+      title="请上传整改好的图片">
+    </c-uploader>
+
+    <!-- 点击此处能将图片同文案等信息一起发布 -->
+<!-- 
+<view>
+  <image src="/images/order/round.png" bindtap="chooseImage" style="width:200rpx;height:200rpx;"></image>
+</view>
+<view wx:for="{{files}}" wx:key="index">
+  <image src="{{item}}" style="width:200rpx;height:200rpx;"  data-index="{{index}}"  bindtap="previewImage"></image>
+</view>
+</view>
+ -->
+ <button type="primary" bindtap="submitSub">发布</button>
+</view>

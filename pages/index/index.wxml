@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="callShowToast" class="tip">
+    <text>弹框</text>
+  </view>
+  <view bindtap="callShowBox" class="tip">
+    <text>自定义弹框</text>
+  </view>
+  <view bindtap="callTel" class="tip">
+    <text>拨打电话</text>
+  </view>
+  <!-- <view class="tip">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+  </view> -->
+  <view bindtap="callMap" class="tip">
+    <text>调取地图api查看位置</text>
+  </view>
+  <view bindtap="callGoMap" class="tip">
+    <text>计算两地之间距离{{xxx.latitude}}-{{num}}</text>
+  </view>
+  <view bindtap="scanCodeEvent" class="tip">
+    <text>扫码</text>
+  </view>
+  <view bindtap="chooseMediaEvent" class="tip">
+    <text>上传照片</text>
+  </view>
+  <view bindtap="showMediaEvent" class="tip">
+    <text>预览照片</text>
+  </view>
+  
+</view>

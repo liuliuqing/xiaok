@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "order-cmp": "/components/order/index"
+  },
+  "navigationBarTitleText": "待接单",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

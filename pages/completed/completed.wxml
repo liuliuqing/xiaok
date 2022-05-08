@@ -1,0 +1,37 @@
+<view class="tabs">
+  <view class="tabs-bar__wrp">
+    <scroll-view scroll-x scroll-into-view="item_{{activeTab}}">
+      <view class="tabs-bar__content">
+        <block wx:for="{{tabs}}" wx:key="index">
+          <view id="item_{{index}}" class="tabs-bar__item {{activeTab === index ? 'tabs-bar-active' : ''}}" bindtap="handleTabClick" data-index="{{index}}">
+            <view class="tabs-bar__title">
+              <text class="">{{item}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <swiper current="{{activeTab}}" duration="{{duration}}" bindchange="handleSwiperChange" class="swiper-box" style="{{swiperHeight}}">
+    <swiper-item wx:for="{{tabs}}" wx:key="index">
+      <view class="tab__content" style="display: {{activeTab === 0 ? 'block' : 'none'}}">
+        <or-code-cmp></or-code-cmp>
+      </view>
+      <view class="tab__content" style="display: {{activeTab === 1 ? 'block' : 'none'}}">
+        <uploader-cmp 
+          bindfail="uploadError" 
+            bindsuccess="uploadSuccess"
+            binddelete="deleteImg"
+            bindpreview="previewImage"
+            binddeleteAll="deleteAllFile"
+            select="{{selectFile}}" 
+            upload="{{uplaodFile}}" 
+            files="{{files}}" 
+            max-count="6" 
+            size-type="{{sizeType}}"
+            title="请上传已签名的交货单凭证">
+        </uploader-cmp>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

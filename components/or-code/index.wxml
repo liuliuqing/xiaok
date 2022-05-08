@@ -1,0 +1,11 @@
+<view class="container">
+  <view>
+    请收获联系人扫描签收  
+  </view>
+  <!-- <view>
+    <image src="/images/order/round.png" class="code-png"></image>
+  </view> -->
+  <view class="qr-box">
+    <canvas style="width: 150px; height: 150px;margin:0 auto" canvas-id="myQrcode"></canvas>
+  </view>
+</view>

@@ -1,0 +1,124 @@
+/* component/order/index.wxss */
+.container{
+  border-radius: 6px;
+  background: #fff;  
+  margin: 16px 14px;
+}
+.flex{
+  display: flex;
+  align-items: center;  
+}
+.head-container{
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+  padding: 9px 12px;
+}
+.title{
+  font-size: 16px;
+  font-weight: bold;
+  color: #707070;
+}
+.status{
+  font-weight: bold;
+  font-size: 14px;
+  background: #c5d2fa;
+  border: 1px solid #c5d1fe;
+  padding: 4px 9px;
+  border-radius: 6px;
+  color: #7c83a2;
+}
+.index-container{
+  padding: 0px 12px 9px 35px;
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+}
+.index-container:before{
+  content: '';
+  width: 3px;
+  height: calc(100% - 82px);
+  position: absolute;
+  left: 18px;
+  top: 27px;
+  background: #ebebeb;
+}
+.box{
+  padding-top: 16px;
+  position: relative;
+}
+.box:last-of-type{
+  margin-bottom: 10px;
+}
+.box:before{
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  position: absolute;
+  left: -23px;
+  top: 21px;
+  background: #707070;
+}
+.class-a.box:before{
+  background: #707070;
+}
+.class-b.box:before{
+  background: #c65b5c;
+}
+.class-c.box:before{
+  background: #fff;
+}
+.icon-box-img{
+  position: absolute;
+  left: -24px;
+  top: 20px;
+}
+.head{
+  font-weight: bold;
+  font-size: 20px;
+  color: #303030;
+  padding-bottom: 7px;
+}
+.address{
+  font-weight: bold;
+  font-size: 12px;
+  color: #acacaa;
+}
+.class-a .type, .class-b .type, .class-c .type{
+  font-weight: bold;
+  font-size: 14px;
+  color: #2e93cd;
+  background: #eaf5fe;
+  padding: 3px 12px;
+  margin-left: 16px;
+  margin-top: -6px;
+}
+.class-b .type{
+  background: #f7ddde;
+  color: #c65b5c;
+}
+.btn-line{
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+button[type=warn]{
+  color: #af3937;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #ec9d9c;
+  background-color: #ffffff;
+  width: auto;
+  margin: 0;
+  min-width: 114px;
+}
+button[type=warn].sub{
+  background: #d93d3c;
+  border: 1px solid #af3937;
+  color: #fff;
+  margin-left: 10px;
+}
+button[type=warn].sub-hover{
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #CE3C39;
+}

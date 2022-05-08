@@ -1,0 +1,20 @@
+<view>
+  <view class="head-container">
+    <view class="title">
+      <text>待接单</text>
+      <text class="subtitle">任务单号：{{nid}}</text>
+    </view>
+    <view class="image"></view>
+  </view>
+  <view class="info-container">
+    <view class="info">
+      <image src="/images/order/round.png" />
+      <text>货品概况</text>
+    </view>
+    <view class="description flex">
+      <text>31.025吨</text>
+      <text>4000箱</text>
+      <text>61.71m³</text>
+    </view>
+  </view>
+</view>

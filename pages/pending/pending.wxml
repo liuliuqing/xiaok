@@ -1,0 +1,8 @@
+<!--pages/pending/pending.wxml-->
+<!-- <text>pages/pending/pending.wxml</text> -->
+<view class="container">
+  <block wx:for="{{orderList}}" wx:key="nid">
+    <order-cmp order="{{item}}"/>
+  </block>
+</view>
+

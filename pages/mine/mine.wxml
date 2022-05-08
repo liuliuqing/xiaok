@@ -1,0 +1,4 @@
+<image src="/images/login/login.png" class="bg"></image>
+<view class="tip-btn" bindtap="onLogin">
+  <text>微信手机号一键登录</text>
+</view>

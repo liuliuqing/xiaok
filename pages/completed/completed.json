@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "or-code-cmp": "/components/or-code/index",
+    "uploader-cmp": "/components/uploader/uploader"
+  },
+  "navigationBarTitleText": "已完成",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

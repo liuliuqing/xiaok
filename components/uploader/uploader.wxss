@@ -1,0 +1,12 @@
+.weui-uploader__file-delete{
+  position: absolute;
+  top: -7px;
+  right: -5px;
+}
+.del-icon{width: 20px;height: 20px;}
+.weui-uploader__bd{overflow: inherit;}
+
+.gallery{
+  width: 100vh;
+  height: 100vh;
+}

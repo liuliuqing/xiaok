@@ -1,0 +1,23 @@
+<!--component/order/index.wxml-->
+<view class="container">
+  <view class="flex head-container">
+    <view class="title">任务单号：{{order.nid}}</view>
+    <view class="status">{{order.statusName}}</view>
+  </view>
+  <view class="index-container">
+    <block wx:for="{{order.children}}" wx:key="index">
+      <view class="box class-{{ item.type }}">
+        <icon class="icon-box-img" type="success" size="18" wx:if="{{item.type ==='c'}}"></icon>
+        <view class="flex">
+          <view class="head">{{item.name}}</view>
+          <view class="type">{{item.typeName}}</view>
+        </view>
+        <view class="address">{{item.address}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="flex btn-line">
+    <button type="warn" bind:tap="onTap">任务详情</button>
+    <button type="warn" class="sub" hover-class="sub-hover" wx:if="{{order.status == '1'}}">接 单</button>
+  </view>
+</view>

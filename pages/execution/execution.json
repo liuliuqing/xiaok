@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "order-cmp": "/components/order/index",
+    "c-uploader": "/components/uploader/uploader"
+  },
+  "navigationBarTitleText": "执行中",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}
